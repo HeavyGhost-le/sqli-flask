@@ -16,7 +16,7 @@ A beginner-to-intermediate CTF-style Flask web application challenge featuring:
 - Logged-in users can search products using a search box.
 - The `/search` route is **vulnerable to SQL Injection**:
   ```sql
-  SELECT * FROM products WHERE name LIKE '%<input>%' OR description LIKE '%<input>%'
+  ' UNION SELECT 1,username||':'||password||':'||is_admin,3,4 FROM users--
 
     Goal: Exploit the injection to login as admin or dump the flags table.
 

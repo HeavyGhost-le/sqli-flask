@@ -29,8 +29,10 @@ A beginner-to-intermediate CTF-style Flask web application challenge featuring:
 
 ▶️ Run the App
 
-pip install flask
+```
+pip install flask or pip install flask --break-system-packages
 python app.py
+```
 
 Visit:
 📍 http://localhost:5000
